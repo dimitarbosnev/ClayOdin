@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "name": "Run Main",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/example.exe",
+            "cwd": "${workspaceFolder}/build",
+            "preLaunchTask": "Build (Debug)"
+        },
+    ]
+}

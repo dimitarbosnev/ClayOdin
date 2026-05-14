@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build (Debug)",
+            "type": "shell",
+            "command": "odin build example -build-mode:exe -debug  -out:build/example.exe -extra-linker-flags:\"/LIBPATH:./libs\"",
+            "group": { "kind": "build", "isDefault": true },
+            "presentation": { "reveal": "always" },
+            "dependsOn": "Create Build Folder"
+        },
+        {
+            "label": "Create Build Folder",
+            "type": "shell",
+            "command": "mkdir -p build",
+            "group": { "kind": "build" },
+            "presentation": { "reveal": "always" },
+        }
+    ]
+}

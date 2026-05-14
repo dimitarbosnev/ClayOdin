@@ -1,0 +1,4 @@
+{
+    "ols.debug.engine": "vadimcn.vscode-lldb",
+    "shader-validator.glsl.targetClient": "OpenGL450",
+}
