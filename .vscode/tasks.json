@@ -12,7 +12,7 @@
         {
             "label": "Create Build Folder",
             "type": "shell",
-            "command": "mkdir -p build",
+            "command": "if not exist build mkdir build",
             "group": { "kind": "build" },
             "presentation": { "reveal": "always" },
         }
